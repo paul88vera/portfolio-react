@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useState, setFormState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
@@ -15,33 +16,31 @@ function ContactForm() {
     setFormState({ ...formState, [e.target.name]: e.target.value });
 
     if (e.target.name === "email") {
-     const isValid = validateEmail(e.target.value);
-     console.log(isValid);
-     // isValid conditional statement
-     if (!isValid) {
-       setErrorMessage("Your email is invalid.");
-     } else {
-       setErrorMessage("");
-     }
-   } else {
-     if (!e.target.value.length) {
-       setErrorMessage(`${e.target.name} is required.`);
-     } else {
-       setErrorMessage("");
-     }
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
 
-     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
+      if (!errorMessage) {
+        setFormState({ ...formState, [e.target.name]: e.target.value });
+      }
     }
-   }
- 
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     console.log(formState);
   }
-
 
   return (
     <section>
@@ -74,7 +73,9 @@ function ContactForm() {
             rows="5"
           />
         </div>
-        <button data-testid="sub" type="submit">Submit</button>
+        <button data-testid="sub" type="submit">
+          Submit
+        </button>
       </form>
     </section>
   );
