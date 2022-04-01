@@ -3,7 +3,9 @@ import React from "react";
 function Nav() {
   return (
     <header>
-      <h1>Paul Vera</h1>
+      <h1>
+        <a href="#">Paul Vera</a>
+      </h1>
       <nav>
         <ul>
           <li>
