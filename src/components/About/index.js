@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
  return (
-  <div>
-   <h2>Hey</h2>
-  </div>
+  <section>
+   <img src={'./images/pro-pic.jpg'} alt="" />
+  </section>
  )
 }
 
