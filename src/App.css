@@ -106,13 +106,15 @@ footer p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-basis: 3;
+  flex-basis: 2;
   flex-grow: 3;
   flex-shrink: 1;
 }
 .port-pic {
-  min-width: 250px;
-  margin: 1em;
+  margin: 1em 0;
+}
+.port-pic img {
+  min-width: 325px;
 }
 /* CONTACT CSS */
 .contact {
@@ -154,6 +156,7 @@ footer p {
   border: coral 2px solid;
   padding: 0.5em 1em;
   color: aliceblue;
+  font-size: 14px;
   text-decoration: none;
 }
 .download-btn:hover {
@@ -161,6 +164,9 @@ footer p {
 }
 /* MEDIA QUERIES */
 @media only screen and (min-width: 728px) {
+  .nav-btn {
+    display: inline-flex;
+  }
   .about {
     text-align: left;
     width: 50%;
@@ -171,6 +177,9 @@ footer p {
     display: flex;
     align-items: center;
     margin: 0 auto;
+  }
+  .port-pic {
+    margin: 1em;
   }
   .contact {
     align-items: center;
