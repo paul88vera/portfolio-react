@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <section className="about">
-     <h3>About Me</h3>
+     <h2 className="title">About Me</h2>
       <div className="proPic">
         <img src={"./images/pro-pic.png"} alt="" width="200px" />
       </div>

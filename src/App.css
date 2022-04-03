@@ -8,12 +8,20 @@
 .main-page {
   width: 100%;
   background-color: #282c34;
-  overflow: hidden;
   font-size: large;
+  color: aliceblue;
+}
+.title {
+  color: coral;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
 }
 /* HEADER || NAV || FOOTER CSS*/
 header {
-  background-image: url();
   text-align: center;
 }
 header h1 {
@@ -47,11 +55,11 @@ nav ul li a {
 }
 footer {
   text-align: center;
-  color:aliceblue;
   padding: 1em;
+  background-color: #282c34;
+  height: 20vh;
 }
 footer div a {
-  color: rgb(211, 211, 211);
   margin: 0 2em;
 }
 footer div a img:hover {
@@ -62,8 +70,12 @@ footer div a img:hover {
 }
 /* Just some silly & fun animation here */
 @keyframes iconRotate {
-  from {transform: rotateY(-360deg);}
-  to {transform: rotateY(360deg);}
+  from {
+    transform: rotateY(-360deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 footer p {
   margin-top: 1em;
@@ -74,23 +86,23 @@ footer p {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  color: aliceblue;
   justify-content: center;
   text-align: center;
   height: 100%;
+  overflow: hidden;
 }
 .proPic {
   margin: 1em 0;
- width: 100%;
- text-align: center;
+  width: 100%;
+  text-align: center;
 }
-.about-para span{
+.about-para span {
   color: coral;
   font-size: larger;
 }
 /* GALLERY CSS */
 .port-gallery {
-  padding-top: 1em;
+  padding: 1em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -103,12 +115,80 @@ footer p {
   margin: 1em;
 }
 /* CONTACT CSS */
-
+.contact {
+  margin: 0 auto;
+  padding: 1em;
+  width: 90%;
+}
+#contact-form input {
+  width: 100%;
+  height: 30px;
+}
+#contact-form textarea {
+  height: 90px;
+  width: 100%;
+  resize: none;
+}
+#contact-form button {
+  margin-top: 1em;
+  padding: 0.8em;
+  width: 100%;
+  background-color: coral;
+  font-weight: 700;
+}
+/* RESUME CSS */
+.resume {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.resume ul,
+.resume h3 {
+  text-align: center;
+  list-style: none;
+}
+.download-btn {
+  border: coral 2px solid;
+  padding: 0.5em 1em;
+  color: aliceblue;
+  text-decoration: none;
+}
+.download-btn:hover {
+  background-color: coral;
+}
 /* MEDIA QUERIES */
 @media only screen and (min-width: 728px) {
   .about {
     text-align: left;
-    width: 70%;
+    width: 50%;
     margin: 2em auto;
+  }
+  .port-gallery,
+  .resume {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .contact {
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contact p {
+    margin: 0 1em;
+  }
+  .resume ul,
+  .resume h3 {
+    text-align: left;
+    list-style: circle;
+  }
+  .resume ul {
+    padding: 1em 2em;
+  }
+  .contact {
+    text-align: left;
   }
 }

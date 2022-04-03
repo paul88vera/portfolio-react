@@ -3,6 +3,7 @@ import React from "react";
 function Gallery() {
   return (
     <section className="port-gallery">
+      <h2 className="title">Portfolio</h2>
       <div className="port-pic">
         <img src={"./images/budget-tracker-app.png"} alt="" width='350px'/>
       </div>

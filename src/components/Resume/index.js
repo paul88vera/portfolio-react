@@ -3,13 +3,35 @@ import React from "react";
 
 function Resume() {
   return (
-    <section>
-      <a href="#">Download Resume</a>
+    <section className="resume">
+      <h2 className="title">Resume</h2>
+      <a href="./resume.pdf" target='_blank' className="download-btn" download>
+        Download Resume
+      </a>
       <div>
-        `HTML BASH JSON MySQL NoSQL VECTOR GRAPHIC DESIGN ADOBE CREATIVE SUITE
-        GOOGLE ANALYTICS MS OFFICE SUITE CLOUD SERVICES HANDLEBARS.JS MAC OSX /
-        WIN API/REST API BOOTSTRAP 5 EXPRESS.JS JAVASCRIPT GIT/GITHUB WORDPRESS
-        CSS/SASS NODE.JS PYTHON JQUERY FIGMA AGILE SQL`
+        <br />
+        <h3>Front-End Proficiencies:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS/SCSS/SASS</li>
+          <li>JavaScript</li>
+          <li>JQuery</li>
+          <li>React</li>
+          <li>Mobile-First Design</li>
+          <li>Responsive Design</li>
+          <li>Bootstrap</li>
+        </ul>
+        <br />
+        <h3>Back-End Proficiencies:</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>NoSQL/MySQL</li>
+          <li>GraphQL</li>
+          <li>REST</li>
+          <li>Sequelize</li>
+        </ul>
       </div>
     </section>
   );
