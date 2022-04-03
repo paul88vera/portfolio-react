@@ -45,7 +45,28 @@ nav ul li a {
   color: #282c34;
 }
 footer {
-
+  text-align: center;
+  color:aliceblue;
+  padding: 1em;
+}
+footer div a {
+  color: rgb(211, 211, 211);
+  margin: 0 2em;
+}
+footer div a img:hover {
+  animation-name: iconRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* Just some silly & fun animation here */
+@keyframes iconRotate {
+  from {transform: rotateY(-360deg);}
+  to {transform: rotateY(360deg);}
+}
+footer p {
+  margin-top: 1em;
+  cursor: default;
 }
 /* GALLERY CSS */
 .port-gallery {
