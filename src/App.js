@@ -26,9 +26,9 @@ function App() {
             <Route exact path="/contact">
               <ContactForm />
             </Route>
-            <Footer />
           </Switch>
         </div>
+        <Footer />
       </main>
     </Router>
   );
