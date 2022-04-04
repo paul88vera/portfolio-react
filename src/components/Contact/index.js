@@ -17,10 +17,10 @@ function ContactForm() {
 
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
+        // alert("Your email is invalid.");
       } else {
         setErrorMessage("");
       }
@@ -39,15 +39,27 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+    if (!errorMessage) {
+      alert('Thank you for the email! I will respond as soon as I can!')
+      console.log("Submitted Form", formState);
+    }
   }
 
   return (
     <section className="contact">
-      <h2 data-testid="con" className="title">Contact Me</h2>
-      <p>If you have questions or want more information about any of my projects, let me know down below.</p>
-      <br/>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h2 data-testid="con" className="title">
+        Contact Me
+      </h2>
+      <p>
+        If you have questions or want more information about any of my projects,
+        let me know down below.
+      </p>
+      <br />
+      <form
+        id="contact-form"
+        onSubmit={handleSubmit}
+        emailto="paul88vera@gmail.com"
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -74,6 +86,11 @@ function ContactForm() {
             onBlur={handleChange}
             rows="5"
           />
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
         </div>
         <button data-testid="sub" type="submit">
           SUBMIT
