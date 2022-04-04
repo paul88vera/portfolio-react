@@ -1,7 +1,5 @@
 import React from "react";
 
-// function picHover() {}
-
 function Gallery() {
   return (
     <section className="port-gallery">
