@@ -33,6 +33,11 @@ header h1 a {
 }
 nav {
   display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+nav ul {
+  width: 100%;
 }
 nav ul li {
   list-style: none;
@@ -43,11 +48,13 @@ nav ul li a {
   color: aliceblue;
 }
 .nav-btn {
+  margin: 0 auto;
   display: inline-flex;
 }
 .nav-btn a {
   align-content: center;
-  padding: 1em 2em;
+  padding: .5em 1em;
+  margin: 0 .5em;
 }
 .nav-btn a:hover {
   background-color: aliceblue;
@@ -110,11 +117,29 @@ footer p {
   flex-grow: 3;
   flex-shrink: 1;
 }
-.port-pic {
-  margin: 1em 0;
-}
 .port-pic img {
   min-width: 325px;
+  margin: 2em 0;
+}
+.port-pic img:hover {
+  opacity: .3;
+}
+/* PORTFOLIO HOVER EFFECTS */
+.port-links{
+ text-align: left;
+
+}
+.port-links a {
+  text-decoration: none;
+  color: coral;
+  border: solid coral 2px;
+  padding: .5em 1em;
+  margin: 2em 0;
+  border-radius: 5px;
+}
+.port-links a:hover {
+  color: aliceblue;
+  background-color: coral;
 }
 /* CONTACT CSS */
 .contact {
@@ -154,6 +179,7 @@ footer p {
 }
 .download-btn {
   border: coral 2px solid;
+  border-radius: 5px;
   padding: 0.5em 1em;
   color: aliceblue;
   font-size: 14px;
