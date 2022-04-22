@@ -6,6 +6,24 @@ function Gallery() {
       <h2 className="title">Portfolio</h2>
       <div className="port-pic">
         <a
+          href="https://barber-shop-sidemerns.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={"./images/home.png"} alt="" width="325px" />
+        </a>
+        <div className="port-links">
+          <a
+            href="https://github.com/paul88vera/barber-shop"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Repository
+          </a>
+        </div>
+      </div>
+      <div className="port-pic">
+        <a
           href="https://shielded-falls-48437.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
