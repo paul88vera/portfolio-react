@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React, { useState, setFormState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from "emailjs-com";
 
 function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
@@ -40,8 +41,19 @@ function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!errorMessage) {
-      alert('Thank you for the email! I will respond as soon as I can!')
-      console.log("Submitted Form", formState);
+      emailjs
+        .sendForm("service_i3y68e3", "template_81ojwa7", e.target, 'KNv5JFb9L05OTducq')
+        .then(function (response) {
+          alert(
+            "Thank you for the email! I will respond as soon as I can!",
+            response.status,
+            response.text
+          );
+          window.location.reload();
+        }),
+        function (error) {
+          console.log("FAILED...", error);
+        };
     }
   }
 
