@@ -12,6 +12,8 @@ function Gallery() {
         >
           <img src={"./images/budget-tracker-app.png"} alt="" width="325px" />
         </a>
+        <h4>Budget Tracker</h4>
+        <br/>
         <div className="port-links">
           <a
             href="https://www.github.com/paul88vera/budget-tracker"
@@ -30,6 +32,8 @@ function Gallery() {
         >
           <img src={"./images/sn-api.png"} alt="" width="325px" />
         </a>
+        <h4>Social Network API</h4>
+        <br/>
         <div className="port-links">
           <a
             href="https://www.github.com/paul88vera/social-network-api"
@@ -48,6 +52,8 @@ function Gallery() {
         >
           <img src={"./images/Old_Fashioned.png"} alt="" width="325px" />
         </a>
+        <h4>Old Fashioned - (In Development)</h4>
+        <br/>
         <div className="port-links">
           <a
             href="https://www.github.com/paul88vera/Old-Fashioned"
@@ -66,6 +72,8 @@ function Gallery() {
         >
           <img src={"./images/techieblog_homepage.png"} alt="" width="325px" />
         </a>
+        <h4>Techie Blog</h4>
+        <br/>
         <div className="port-links">
           <a
             href="https://www.github.com/paul88vera/tech-blog"
@@ -88,6 +96,8 @@ function Gallery() {
             width="325px"
           />
         </a>
+        <h4>Team Profile Generator</h4>
+        <br/>
         <div className="port-links">
           <a
             href="https://www.github.com/paul88vera/team-profile-generator"
@@ -102,6 +112,7 @@ function Gallery() {
         <a href="https://www.codeup.com" target="_blank" rel="noreferrer">
           <img src={"./images/Codeup-WordPress.gif"} alt="" width="325px" />
         </a>
+        <h4>Codeup, LLC - WordPress</h4>
       </div>
       <div className="port-pic">
         <a
@@ -111,6 +122,8 @@ function Gallery() {
         >
           <img src={"./images/VerafiedCreations.png"} alt="" width="325px" />
         </a>
+        <br/>
+        <h4>Freelance Web Design</h4>
       </div>
     </section>
   );
